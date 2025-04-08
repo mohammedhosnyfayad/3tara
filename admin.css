@@ -58,7 +58,6 @@ html {
 body {
   direction: rtl;
   font-family: "Alexandria", serif;
-  height: 7000px;
 }
 
 .background {
@@ -127,6 +126,7 @@ nav .links li:hover:before {
     left: 0;
     top: 0;
     gap: 0;
+    z-index: 78798798798798;
     transition: 0.3s;
     transform: translatey(-500px);
   }
@@ -398,6 +398,11 @@ input::placeholder {
     left: 0;
   }
 }
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .box-product img {
+    left: -2px;
+  }
+}
 .video-show {
   color: #bf4205;
   cursor: pointer;
@@ -623,6 +628,7 @@ select {
   text-align: center;
   padding: 40px;
   font-size: 18px;
+  line-height: 1.5;
 }
 #statusMsg {
   padding-top: 20px;
@@ -634,5 +640,40 @@ select {
     justify-content: center;
     align-items: center;
     gap: 50px;
+  }
+}
+.footer {
+  margin-top: 100px;
+}
+.box-end {
+  background-color: #111111;
+  padding: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.box-end h3 {
+  margin: 0;
+  padding: 10px;
+  color: white;
+}
+.box-end img {
+  transform: rotate(5deg);
+  width: 70px;
+  transition: 0.3s;
+}
+.box-end img:hover {
+  transform: rotate(0);
+}
+@media (min-width: 200px) and (max-width: 1000px) {
+  .box-end {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .box-imgs {
+    border-bottom: 1px solid rgb(66, 66, 66);
   }
 }
